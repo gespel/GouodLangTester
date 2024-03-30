@@ -4,7 +4,7 @@
 int main() {
     Lexer l;
     Interpreter i;
-    i.interpret(l.tokenize("function asd() { x2 = 2; return x2; } asd();"));
+    i.interpret(l.tokenize("function asd() { x2 = 2; return x2; } asd() + 2; x = asd() + 1;"));
     i.printDebug();
 
     return 0;
