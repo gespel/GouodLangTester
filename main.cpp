@@ -1,10 +1,10 @@
-#include "gouodlib/GouodLang/Lexer.h"
-#include "gouodlib/GouodLang/Interpreter.h"
+#include "gouodlib/GouodLang/Core/Lexer.h"
+#include "gouodlib/GouodLang/Core/Interpreter.h"
 
 int main() {
     Lexer l;
     Interpreter i;
-    i.interpret(l.tokenize("x = 3 + 2 * 2 * 2; y = x + 1 + 1; function asd() { x2 = 2; } z = 5; x3 = asd();"));
+    i.interpret(l.tokenize("function asd() { x2 = 2; return x2; } x3 = asd(); x = 7 + 7; x;"));
     i.printDebug();
 
     return 0;

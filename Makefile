@@ -1,3 +1,3 @@
-build:
-	clang++ -o main main.cpp gouodlib/GouodLang/Lexer.cpp gouodlib/GouodLang/Interpreter.cpp
+build: 
+	g++ -o main main.cpp gouodlib/GouodLang/Core/Lexer.cpp gouodlib/GouodLang/Core/Interpreter.cpp gouodlib/GouodLang/Core/Function.cpp
 	./main
