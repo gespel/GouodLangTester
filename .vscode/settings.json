@@ -88,5 +88,6 @@
         "locale": "cpp",
         "complex": "cpp",
         "shared_mutex": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
